@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS BASICS CHALLENGE - Calculator</title>
+    <!-- css  -->
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!-- heading -->
+    <section id="Heading">
+      <h3>CALC<span>ULATOR</span></h3>
+    </section>
+
+    <!-- calculator-body -->
+    <section id="Calculator-body">
+      <!-- output -->
+      <div class="box">
+        <span id="output"></span>
+      </div>
+      <!-- segment-1 -->
+      <p>
+        <button
+          onclick="
+        initialValue += '1';
+        output.innerText = initialValue;
+      "
+        >
+          1
+        </button>
+        <button
+          onclick="
+        initialValue += '2';
+        output.innerText = initialValue;
+      "
+        >
+          2
+        </button>
+        <button
+          onclick="
+        initialValue += '3';
+        output.innerText = initialValue;
+      "
+        >
+          3
+        </button>
+        <button
+          class="impt-btns"
+          onclick="
+        initialValue += '+';
+        output.innerText = initialValue;
+      "
+        >
+          +
+        </button>
+      </p>
+      <!-- segment-2 -->
+      <p>
+        <button
+          onclick="
+        initialValue += '4';
+        output.innerText = initialValue;
+      "
+        >
+          4
+        </button>
+        <button
+          onclick="
+        initialValue += '5';
+        output.innerText = initialValue;
+      "
+        >
+          5
+        </button>
+        <button
+          onclick="
+        initialValue += '6';
+        output.innerText = initialValue;
+      "
+        >
+          6
+        </button>
+        <button
+          class="impt-btns"
+          onclick="
+        initialValue += '-';
+        output.innerText = initialValue;
+      "
+        >
+          -
+        </button>
+      </p>
+      <!-- segment-3 -->
+      <p>
+        <button
+          onclick="
+        initialValue += '7';
+        output.innerText = initialValue;
+      "
+        >
+          7
+        </button>
+        <button
+          onclick="
+        initialValue += '8';
+        output.innerText = initialValue;
+      "
+        >
+          8
+        </button>
+        <button
+          onclick="
+        initialValue += '9';
+        output.innerText = initialValue;
+      "
+        >
+          9
+        </button>
+        <button
+          class="impt-btns"
+          onclick="
+        initialValue += '/';
+        output.innerText = initialValue;
+      "
+        >
+          /
+        </button>
+      </p>
+      <!-- segment-4 -->
+      <p>
+        <button
+          onclick="
+        initialValue = '0';
+        output.innerText = initialValue;
+      "
+        >
+          0
+        </button>
+        <button
+          onclick="
+        initialValue += '*';
+        output.innerText = initialValue;
+      "
+        >
+          *
+        </button>
+        <button
+          onclick="
+        initialValue = '';
+        output.innerText = initialValue;
+      "
+        >
+          C
+        </button>
+        <button
+          class="impt-btns"
+          onclick="
+          // total [final-value]
+          let finalValue = eval(initialValue);
+
+          // view-on-screen!
+          output.innerText = finalValue;
+      "
+        >
+          =
+        </button>
+      </p>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="./src/script.js"></script>
+  </body>
+</html>
