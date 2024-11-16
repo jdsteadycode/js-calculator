@@ -11,162 +11,45 @@
   <body>
     <!-- heading -->
     <section id="Heading">
-      <h3>CALC<span>ULATOR</span></h3>
+      <h1>CALC<span>ULATOR</span></h1>
     </section>
 
-    <!-- calculator-body -->
-    <section id="Calculator-body">
-      <!-- output -->
-      <div class="box">
-        <span id="output"></span>
-      </div>
-      <!-- segment-1 -->
-      <p>
-        <button
-          onclick="
-        initialValue += '1';
-        output.innerText = initialValue;
-      "
-        >
-          1
-        </button>
-        <button
-          onclick="
-        initialValue += '2';
-        output.innerText = initialValue;
-      "
-        >
-          2
-        </button>
-        <button
-          onclick="
-        initialValue += '3';
-        output.innerText = initialValue;
-      "
-        >
-          3
-        </button>
-        <button
-          class="impt-btns"
-          onclick="
-        initialValue += '+';
-        output.innerText = initialValue;
-      "
-        >
-          +
-        </button>
-      </p>
-      <!-- segment-2 -->
-      <p>
-        <button
-          onclick="
-        initialValue += '4';
-        output.innerText = initialValue;
-      "
-        >
-          4
-        </button>
-        <button
-          onclick="
-        initialValue += '5';
-        output.innerText = initialValue;
-      "
-        >
-          5
-        </button>
-        <button
-          onclick="
-        initialValue += '6';
-        output.innerText = initialValue;
-      "
-        >
-          6
-        </button>
-        <button
-          class="impt-btns"
-          onclick="
-        initialValue += '-';
-        output.innerText = initialValue;
-      "
-        >
-          -
-        </button>
-      </p>
-      <!-- segment-3 -->
-      <p>
-        <button
-          onclick="
-        initialValue += '7';
-        output.innerText = initialValue;
-      "
-        >
-          7
-        </button>
-        <button
-          onclick="
-        initialValue += '8';
-        output.innerText = initialValue;
-      "
-        >
-          8
-        </button>
-        <button
-          onclick="
-        initialValue += '9';
-        output.innerText = initialValue;
-      "
-        >
-          9
-        </button>
-        <button
-          class="impt-btns"
-          onclick="
-        initialValue += '/';
-        output.innerText = initialValue;
-      "
-        >
-          /
-        </button>
-      </p>
-      <!-- segment-4 -->
-      <p>
-        <button
-          onclick="
-        initialValue = '0';
-        output.innerText = initialValue;
-      "
-        >
-          0
-        </button>
-        <button
-          onclick="
-        initialValue += '*';
-        output.innerText = initialValue;
-      "
-        >
-          *
-        </button>
-        <button
-          onclick="
-        initialValue = '';
-        output.innerText = initialValue;
-      "
-        >
-          C
-        </button>
-        <button
-          class="impt-btns"
-          onclick="
-          // total [final-value]
-          let finalValue = eval(initialValue);
+    <!-- calculator-content -->
+     <section id="calculator-content">
+      <div class="js-display display">0</div>
+     </section>
 
-          // view-on-screen!
-          output.innerText = finalValue;
-      "
-        >
-          =
-        </button>
-      </p>
+    <!-- calculator-body -->
+    <section class="calculator-container">
+      <div class="calculator-button-grid">
+        <!-- row-1 -->
+        <button class="js-clear button" aria-label="Clear">C</button>
+        <button class="js-symbol button" aria-label="Division">/</button>
+        <button class="js-symbol button" aria-label="Multiplication">*</button>
+        <button class="js-symbol button" aria-label="Subtraction">-</button>
+
+        <!-- row-2 -->
+        <button class="js-number button" aria-label="7">7</button>
+        <button class="js-number button" aria-label="8">8</button>
+        <button class="js-number button" aria-label="9">9</button>
+        <button class="js-symbol button" aria-label="Addition">+</button>
+
+        <!-- row-3 -->
+        <button class="js-number button" aria-label="4">4</button>
+        <button class="js-number button" aria-label="5">5</button>
+        <button class="js-number button" aria-label="6">6</button>
+        <button class="js-symbol button" aria-label="Equal">=</button>
+
+        <!-- row-4 -->
+        <button class="js-number button" aria-label="1">1</button>
+        <button class="js-number button" aria-label="2">2</button>
+        <button class="js-number button" aria-label="3">3</button>
+        <button class="js-decimal button" aria-label="Decimal">.</button>
+
+        <!-- row-4 -->
+        <button class="js-number button wide" aria-label="0">0</button>
+        <button class="js-percentage button" aria-label="Percentage">%</button>
+      </div>
     </section>
 
     <!-- JavaScript -->
