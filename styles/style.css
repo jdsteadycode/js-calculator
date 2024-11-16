@@ -5,38 +5,79 @@ html {
 
 body {
   font-family: "Segoe UI";
+  background-color: #f5f5f5;
 }
 
 #Heading {
   text-align: center;
+  font-size: 20px;
+  margin-bottom: 25px;
 }
 
 #Heading span {
   color: teal;
 }
 
-#Calculator-body {
-  text-align: center;
+#calculator-content {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.display {
+  width: 100%;
+  max-width: 235px;
+  padding: 10px;
+  border: none;
+  border: 1px solid #333;
+  color: teal;
+  font-size: 2rem;
+  border-radius: 8px;
+  text-align: right;
+
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: center;
+}
+
+.calculator-button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 button {
   border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  cursor: pointer;
+  padding: 20px 20px;
+  border-radius: 10px;
+  cursor: grab;
+  font-size: 18px;
+  transition: opacity .15s;
 }
 
-.impt-btns {
+button:hover {
+  opacity: .8;
+}
+
+.js-symbol {
+  /* background-color: #ffab00; */
   background-color: teal;
   color: #fff;
 }
 
-.box {
-  margin-inline: auto;
-  width: auto;
-  max-width: 35%;
-  background: transparent;
-  padding: 20px 20px;
-  border: 0.5px solid teal;
-  border-radius: 4px;
+.js-equals {
+  background-color: teal;
+  color: white;
+  grid-row: span 2;
+}
+
+.js-clear {
+  background-color: rgb(240, 70, 104);
+  color: white;
+}
+
+.wide {
+  grid-column: span 3;
 }
